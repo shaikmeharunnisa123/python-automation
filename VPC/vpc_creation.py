@@ -5,6 +5,6 @@ ec2 = boto3.client("ec2",region_name = "ap-south-2")
 response = ec2.create_vpc(
     CidrBlock = "10.0.0.0/16"
 )
-
+    
 print(response["Vpc"]["VpcId"])
 
